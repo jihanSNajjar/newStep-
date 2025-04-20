@@ -1,0 +1,121 @@
+/* Add some magical styles to your HTML */
+body {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: "Arial", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+main {
+  width: 35%;
+  height: 70%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+section h2 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+section h3 {
+  margin-top: 0;
+  padding: 0px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: glow 2s infinite alternate;
+}
+section p {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact {
+  text-align: start;
+  width: 100%;
+  margin-top: 20px;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  list-style: none;
+  gap: 20px;
+}
+
+.social-media li i:hover {
+  text-decoration: none;
+  transform:translateY(-5px) scale(1.5);
+  transition: transform 0.3s ease-in-out;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff9a9e, 0 0 20px #fad0c4, 0 0 30px #ff9a9e;
+  }
+  to {
+    text-shadow: 0 0 20px #ff9a9e, 0 0 30px #fad0c4, 0 0 40px #ff9a9e;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+  main {
+    width: 90%;
+    height: auto;
+  }
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+  section h2 {
+    font-size: 2rem;
+  }
+  section h3 {
+    font-size: 1.5rem;
+  }
+  section p {
+    font-size: 1rem;
+  }
+}
